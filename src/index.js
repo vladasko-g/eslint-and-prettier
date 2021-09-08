@@ -1,10 +1,18 @@
 const obj = {
   a: 1,
-  b: '9',
+  b: 'someText',
 };
 
-const f = arg => console.log(arg);
+const log = val => console.log(val);
 
-(function iife() {
-  return obj;
+const module = (function iife() {
+  const private = 'super secret';
+
+  const logPrivate = () => console.log(private);
+
+  return {
+    logPrivate,
+  };
 })();
+
+module.logPrivate();
