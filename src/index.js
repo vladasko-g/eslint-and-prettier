@@ -10,5 +10,5 @@ const logger = () => {
 }
 
 (function iife() {
-  // return obj;
+  return obj;
 })();
