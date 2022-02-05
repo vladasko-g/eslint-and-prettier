@@ -5,6 +5,10 @@ const obj = {
 
 const f = arg => console.log(arg);
 
+const logger = () => {
+  console.log('i log');
+}
+
 (function iife() {
-  return obj;
+  // return obj;
 })();
