@@ -5,6 +5,6 @@ const obj = {
 
 const f = arg => console.log(arg);
 
-(function iife() {
-  return obj;
-})();
+// (function iife() {
+//   return obj;
+// })();
